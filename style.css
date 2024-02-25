@@ -1,0 +1,46 @@
+/* HTML */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Body */
+body {
+    background: #52dfb7;
+}
+
+/* Content */
+.content {
+    /* Text alignment */
+    text-align: center;
+    /* Background color */
+    background: whitesmoke;
+    /* Height and width */
+    height: 100%;
+    width: 100%;
+    /* Positioning */
+    position: absolute;
+    /* Spacing */
+    padding: 10px;
+    margin: auto;
+}
+
+/* Media Query for viewport width >= 800px */
+@media (min-width: 800px) {
+    .content {
+        /* Adjusting width */
+        width: 50%;
+        /* Centering horizontally */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Media Query for viewport width < 800px */
+@media (max-width: 799px) {
+    .content {
+        /* Background color change */
+        background: #52dfb7;
+    }
+}
